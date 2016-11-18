@@ -55,4 +55,8 @@ public class MailClient
         MailItem item = new MailItem(user, to, message, subject);
         server.post(item);
     }
+    
+    public void numeroMensajes(){
+        System.out.println(server.howManyMailItems(user));
+    }
 }
